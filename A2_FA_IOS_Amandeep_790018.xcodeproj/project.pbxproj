@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		B36F3A9F25C80D1C00CDF02B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36F3A9E25C80D1C00CDF02B /* AppDelegate.swift */; };
 		B36F3AA125C80D1C00CDF02B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36F3AA025C80D1C00CDF02B /* SceneDelegate.swift */; };
-		B36F3AA325C80D1C00CDF02B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36F3AA225C80D1C00CDF02B /* ViewController.swift */; };
+		B36F3AA325C80D1C00CDF02B /* AddProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36F3AA225C80D1C00CDF02B /* AddProducts.swift */; };
 		B36F3AA625C80D1C00CDF02B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B36F3AA425C80D1C00CDF02B /* Main.storyboard */; };
 		B36F3AA925C80D1C00CDF02B /* A2_FA_IOS_Amandeep_790018.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B36F3AA725C80D1C00CDF02B /* A2_FA_IOS_Amandeep_790018.xcdatamodeld */; };
 		B36F3AAB25C80D1C00CDF02B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B36F3AAA25C80D1C00CDF02B /* Assets.xcassets */; };
 		B36F3AAE25C80D1C00CDF02B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B36F3AAC25C80D1C00CDF02B /* LaunchScreen.storyboard */; };
+		B36F3ABC25C8147000CDF02B /* ProductTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36F3ABB25C8147000CDF02B /* ProductTVC.swift */; };
+		B36F3AC025C8149000CDF02B /* ProviderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36F3ABF25C8149000CDF02B /* ProviderTVC.swift */; };
+		B3BC068D25C87B0A005DAA79 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BC068C25C87B0A005DAA79 /* Products.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B36F3A9B25C80D1C00CDF02B /* A2_FA_IOS_Amandeep_790018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A2_FA_IOS_Amandeep_790018.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36F3A9E25C80D1C00CDF02B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B36F3AA025C80D1C00CDF02B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B36F3AA225C80D1C00CDF02B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B36F3AA225C80D1C00CDF02B /* AddProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProducts.swift; sourceTree = "<group>"; };
 		B36F3AA525C80D1C00CDF02B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B36F3AA825C80D1C00CDF02B /* A2_FA_IOS_Amandeep_790018.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = A2_FA_IOS_Amandeep_790018.xcdatamodel; sourceTree = "<group>"; };
 		B36F3AAA25C80D1C00CDF02B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B36F3AAD25C80D1C00CDF02B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B36F3AAF25C80D1C00CDF02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B36F3ABB25C8147000CDF02B /* ProductTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTVC.swift; sourceTree = "<group>"; };
+		B36F3ABF25C8149000CDF02B /* ProviderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderTVC.swift; sourceTree = "<group>"; };
+		B3BC068C25C87B0A005DAA79 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,43 @@
 		B36F3A9D25C80D1C00CDF02B /* A2_FA_IOS_Amandeep_790018 */ = {
 			isa = PBXGroup;
 			children = (
+				B36F3AB925C813C300CDF02B /* Model */,
+				B36F3AB825C813BB00CDF02B /* View */,
+				B36F3AB725C813A800CDF02B /* Controller */,
 				B36F3A9E25C80D1C00CDF02B /* AppDelegate.swift */,
 				B36F3AA025C80D1C00CDF02B /* SceneDelegate.swift */,
-				B36F3AA225C80D1C00CDF02B /* ViewController.swift */,
-				B36F3AA425C80D1C00CDF02B /* Main.storyboard */,
 				B36F3AAA25C80D1C00CDF02B /* Assets.xcassets */,
 				B36F3AAC25C80D1C00CDF02B /* LaunchScreen.storyboard */,
 				B36F3AAF25C80D1C00CDF02B /* Info.plist */,
-				B36F3AA725C80D1C00CDF02B /* A2_FA_IOS_Amandeep_790018.xcdatamodeld */,
 			);
 			path = A2_FA_IOS_Amandeep_790018;
+			sourceTree = "<group>";
+		};
+		B36F3AB725C813A800CDF02B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B36F3AA225C80D1C00CDF02B /* AddProducts.swift */,
+				B36F3ABB25C8147000CDF02B /* ProductTVC.swift */,
+				B36F3ABF25C8149000CDF02B /* ProviderTVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B36F3AB825C813BB00CDF02B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B36F3AA425C80D1C00CDF02B /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B36F3AB925C813C300CDF02B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B36F3AA725C80D1C00CDF02B /* A2_FA_IOS_Amandeep_790018.xcdatamodeld */,
+				B3BC068C25C87B0A005DAA79 /* Products.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B36F3AA325C80D1C00CDF02B /* ViewController.swift in Sources */,
+				B36F3AA325C80D1C00CDF02B /* AddProducts.swift in Sources */,
 				B36F3A9F25C80D1C00CDF02B /* AppDelegate.swift in Sources */,
+				B36F3AC025C8149000CDF02B /* ProviderTVC.swift in Sources */,
+				B3BC068D25C87B0A005DAA79 /* Products.swift in Sources */,
+				B36F3ABC25C8147000CDF02B /* ProductTVC.swift in Sources */,
 				B36F3AA125C80D1C00CDF02B /* SceneDelegate.swift in Sources */,
 				B36F3AA925C80D1C00CDF02B /* A2_FA_IOS_Amandeep_790018.xcdatamodeld in Sources */,
 			);
