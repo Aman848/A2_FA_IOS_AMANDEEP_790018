@@ -101,17 +101,17 @@ class AddProducts: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.destination is ProductTVC {
-        //    productListTableVC.products = self.products ?? <#default value#>
+        if let productListTableVC = segue.destination as? ProductTVC {
+            productListTableVC.products = self.products!
         }
     }
     
     @objc func saveData() {
         let filePath = getDataFilePath()
         
-        let saveString = ""
-        for _ in products! {
-      //      saveString = "\(saveString)\(product.id),\(String(describing: product.name) ),\(String(describing: product.describe)),\(product.price),\(String(describing: product.provider))\n"
+        var saveString = ""
+        for product in products! {
+           saveString = "\(saveString)\(product.id),\(String(describing: product.name) ),\(String(describing: product.describe)),\(product.price),\(String(describing: product.provider))\n"
         }
         
         do {

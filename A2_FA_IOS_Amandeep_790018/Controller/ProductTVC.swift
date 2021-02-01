@@ -13,7 +13,7 @@ class ProductTVC: UITableViewController {
     var products = [Product]()
    var selectedFolder: Provider? {
        didSet {
-       //     loadProduct()
+           loadProduct()
     }
    }
     
@@ -26,12 +26,12 @@ class ProductTVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-   //     showSearchBar()
+      showSearchBar()
         // Uncomment the following line to preserve selection between presentations
-       // self.clearsSelectionOnViewWillAppear = false
+        self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-       //  self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
     
@@ -70,8 +70,8 @@ class ProductTVC: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-        //    deleteProduct(product: products[indexPath.row])
-      //      saveProduct()
+           deleteProduct(product: products[indexPath.row])
+           saveProduct()
             products.remove(at: indexPath.row)
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)
@@ -79,7 +79,7 @@ class ProductTVC: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }
     }
-    /*
+    
     //MARK: - Core data interaction functions
     
     /// load products deom core data
@@ -144,7 +144,7 @@ class ProductTVC: UITableViewController {
    
     
     @IBAction func unwindToNoteTVC(_ unwindSegue: UIStoryboardSegue) {
-        let sourceViewController = unwindSegue.source
+        _ = unwindSegue.source
         // Use data from the view controller which initiated the unwind segue
         saveProduct()
         loadProduct()
@@ -182,7 +182,7 @@ extension ProductTVC: UISearchBarDelegate {
 }
 
     
-    */
+    
     
     
     
@@ -261,4 +261,4 @@ extension ProductTVC: UISearchBarDelegate {
     */
 
 }*/
-}
+
